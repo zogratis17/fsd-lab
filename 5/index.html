@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MongoDB Form</title>
+</head>
+<body>
+  <h2>Enter Name</h2>
+  <form method="POST" action="/addname">
+    <input type="text" name="firstname" placeholder="First Name" required><br><br>
+    <input type="text" name="lastname" placeholder="Last Name" required><br><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <br>
+  <form method="GET" action="/view">
+    <button type="submit">View Records</button>
+  </form>
+</body>
+</html>
