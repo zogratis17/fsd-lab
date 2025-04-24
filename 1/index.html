@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Registration Form</title>
+  <script src="validateform.js" defer></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: rgb(238, 255, 0);
+      padding: 20px;
+    }
+    form {
+      background-color: white;
+      max-width: 500px;
+      margin: auto;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    h2 {
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+    }
+    .radio-group {
+      display: flex;
+      gap: 10px;
+    }
+    .form-actions {
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<form name="StudenSignupForm" onsubmit="return validateHTMLForm();">
+  <h2>Student Registration Form</h2>
+
+  <label>First Name</label>
+  <input type="text" name="textnames" id="textname">
+
+  <label>Last Name</label>
+  <input type="text" name="lastnames" id="lastname">
+
+  <label>Father's Name</label>
+  <input type="text" name="fathername" id="fathername">
+
+  <label>Address</label>
+  <input type="text" name="personaladdress" id="personaladdress">
+
+  <label>Gender</label>
+  <div class="radio-group">
+    <label><input type="radio" name="sex" value="Male"> Male</label>
+    <label><input type="radio" name="sex" value="Female"> Female</label>
+  </div>
+
+  <label>City</label>
+  <select name="City">
+    <option value="-1">Select...</option>
+    <option value="Kolkata">Kolkata</option>
+    <option value="Chennai">Chennai</option>
+    <option value="Pune">Pune</option>
+    <option value="Jaipur">Jaipur</option>
+  </select>
+
+  <label>Course</label>
+  <select name="Course">
+    <option value="-1">Select...</option>
+    <option value="B.Tech">B.Tech</option>
+    <option value="MCA">MCA</option>
+    <option value="MBA">MBA</option>
+    <option value="BCA">BCA</option>
+  </select>
+
+  <label>State</label>
+  <select name="State">
+    <option value="-1">Select...</option>
+    <option value="Tamil Nadu">Tamil Nadu</option>
+    <option value="New Delhi">New Delhi</option>
+    <option value="Mumbai">Mumbai</option>
+    <option value="Goa">Goa</option>
+    <option value="Bihar">Bihar</option>
+  </select>
+
+  <label>District</label>
+  <select name="District">
+    <option value="-1">Select...</option>
+    <option value="Nalanda">Nalanda</option>
+    <option value="UP">UP</option>
+    <option value="Goa">Goa</option>
+    <option value="Patna">Patna</option>
+  </select>
+
+  <label>Pin Code</label>
+  <input type="text" name="pincode" id="pincode">
+
+  <label>Email</label>
+  <input type="text" name="emailid" id="emailid">
+
+  <label>Date of Birth</label>
+  <input type="text" name="dob" id="dob">
+
+  <label>Mobile Number</label>
+  <input type="text" name="mobileno" id="mobileno">
+
+  <div class="form-actions">
+    <input type="reset" value="Reset">
+    <input type="submit" value="Submit">
+  </div>
+</form>
+
+</body>
+</html>
